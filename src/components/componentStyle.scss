@@ -1,0 +1,198 @@
+@import "../variable.scss";
+
+.header__container {
+  padding: 1rem;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1000;
+  background-color: $whiteColor;
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #header__content_left {
+      display: flex;
+      align-items: center;
+      margin-left: 2.7rem;
+
+      #description {
+        padding-left: 24px;
+        font-size: 12px;
+        line-height: 16px;
+        color: $neutralGray;
+        margin: 0px;
+        word-spacing: -0.03em;
+      }
+
+      #header__content_left__inner {
+        display: flex;
+        align-items: center;
+        border-right: 2px solid $neutralGray;
+        padding-right: 1rem;
+
+        .header__tittle {
+          color: $headerTextColor;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 18px;
+          letter-spacing: -0.02em;
+          font-family: "Sofia";
+          margin: 0px 12px;
+        }
+
+        #tag {
+          display: flex;
+          color: $whiteColor;
+          font-size: 12px;
+          background-color: $tagColor;
+          border-radius: 3px;
+          padding: 3px 8px;
+        }
+      }
+    }
+    #header__content_right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// sidebar
+.sidebar__container {
+  width: 64px;
+  height: 100%;
+  position: fixed;
+
+  background-color: $sidebarColor;
+
+  .sidebar__inner {
+    height: inherit;
+    padding-top: 4.2rem;
+
+    .menu_item {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+    }
+    .menu_item_active {
+      border-left: 2px solid $menuActive;
+    }
+  }
+}
+
+// table style
+.tableStyle {
+  .table__header {
+    margin-bottom: 0.5rem;
+
+    p {
+      font-size: 14px;
+      color: $neutralGray;
+    }
+  }
+
+  .tableInnerStyle {
+    display: flex;
+    flex-direction: column;
+    background: $whiteColor;
+    border-radius: 6px;
+    border: 1px solid #d1d3d6;
+
+    .theader__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem 0px 1rem;
+      margin-bottom: 0.6rem;
+
+      #eval_type {
+        display: flex;
+        align-items: center;
+
+        .type {
+          margin-right: 24px;
+          font-size: 12px;
+          padding-bottom: 6px;
+          color: $neutralGray;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.01em;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+      .eval_type_active {
+        border-bottom: 2px solid $menuActive;
+        color: #152738 !important;
+        font-weight: bold;
+      }
+      h4 {
+        margin-right: 1rem;
+        word-spacing: -0.3em;
+      }
+      #btn_group {
+        #btn__job_template {
+          margin-right: 1rem;
+          color: $primaryblue;
+          background-color: transparent;
+          border: 1px solid $primaryblue;
+          border-radius: 3px;
+        }
+        .btn {
+          background: #d0d4d7;
+          border-radius: 3px;
+          color: $whiteColor;
+        }
+      }
+    }
+
+    .ant-table .ant-table-thead > tr th {
+      background: $whiteColor;
+      padding: 10px 14px;
+      color: $neutralGray;
+      font-size: 13px;
+    }
+    .ant-table .ant-table-tbody tr td {
+      border-bottom: none;
+      padding: 10px 14px;
+      font-size: 13px;
+
+      .btn {
+        color: $colorblue;
+        border: 1px solid $colorblue;
+        border-radius: 3px;
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .img__attach{
+        display: flex;
+        align-items: center;
+
+        p{
+          margin-bottom: 0px;
+        }
+      }
+      .img__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: rgba(0, 82, 204, 0.1);
+      }
+    }
+    .ant-table-pagination.ant-pagination {
+      margin: 16px 16px 16px 0px;
+    }
+  }
+}

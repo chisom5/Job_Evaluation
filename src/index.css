@@ -1,0 +1,69 @@
+@font-face {
+  src: url("./assets/fonts/NotoSans/NotoSans-Regular.ttf");
+  font-family: "NotoSans";
+}
+
+@font-face {
+  src: url("./assets/fonts/Sofia/Sofia\ Pro\ Regular\ Az.otf");
+  font-family: "Sofia";
+}
+
+@font-face {
+  src: url("./assets/fonts/KPMG_fonts/KPMG/KPMGApp-Light\ 151001.ttf");
+  font-family: "KPMG App";
+}
+
+@import "../node_modules/antd/dist/antd.min.css";
+
+body {
+  margin: 0;
+  font-family: "NotoSans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f4f5;
+}
+
+.ant-tooltip-inner {
+  background-color: #d0d4d7 !important;
+  color: #152738 !important;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.ant-tooltip-arrow-content {
+  background-color: #d0d4d7 !important;
+}
+
+.ant-drawer-body .title {
+  font-family: "KPMG App";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 0px;
+}
+.ant-drawer-body {
+  padding: 24px 16px !important;
+}
+.ant-drawer-body .comment__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.ant-drawer-body .comment__content .empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.ant-drawer-body .comment__content .empty p {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #858990;
+}

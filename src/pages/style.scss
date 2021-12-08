@@ -1,0 +1,520 @@
+.main__section {
+  padding-top: 70px;
+}
+.init__content {
+  padding-left: 112px;
+  padding-right: 60px;
+  padding-top: 20px;
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: center;
+
+    .init__content_title {
+      font-family: "KPMG App";
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 43px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.04em;
+      margin-bottom: 0px;
+    }
+    .init__content_back {
+      margin: 0px;
+      cursor: pointer;
+      color: $primaryblue;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      font-weight: bold;
+    }
+  }
+
+  .init__content_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // background-color: $whiteColor;
+
+    #header {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+    }
+  }
+  .init__content__eval {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .init__content__eval_item {
+      width: 200px;
+      background: $whiteColor;
+      margin-right: 1rem;
+      border: 1px solid #e8e9eb;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      p {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+      #building_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(234, 170, 0, 0.15);
+
+        img {
+          max-width: 20px;
+          max-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.ant-input {
+  background: $antInputColor;
+  border-radius: 4px;
+  font-size: 14px;
+
+  &::placeholder {
+    font-size: 13px;
+  }
+}
+
+// modal content
+.modalContent_wrapper {
+  .modal__header {
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-bottom: 0px;
+    font-family: "KPMG App";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .ant-row {
+    flex-direction: column;
+  }
+  .ant-form-item {
+    margin-bottom: 0.5rem;
+  }
+  .ant-form-item-label {
+    text-align: left;
+
+    label {
+      font-size: 12px;
+    }
+  }
+}
+.label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 12px !important;
+}
+.btn_group {
+  display: flex;
+  width: inherit;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    width: inherit;
+    justify-content: flex-end;
+  }
+  #cancel_btn {
+    margin-right: 12px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #737d88;
+    font-size: 12px;
+  }
+}
+.btn_primary {
+  background: $primaryblue;
+  border-radius: 3px;
+  color: $whiteColor;
+  font-size: 12px;
+}
+.btn_client {
+  border: 1px solid $primaryblue;
+  background: $whiteColor;
+  color: $primaryblue;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+// eidt configuration page
+.editConfig__wrapper {
+  background: $whiteColor;
+  border: 1px solid #e8e9eb;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+.active_editObj {
+  color: $whiteColor;
+  background: $sidebarColor;
+}
+.header {
+  margin-bottom: 2.3rem;
+
+  .header__tag__btn_active {
+    color: $whiteColor;
+    background-color: $sidebarColor;
+  }
+  .header__tag__btn {
+    border: 1px solid $neutralGray;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .content {
+    h4 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.04em;
+    }
+  }
+}
+.content__item {
+  display: flex;
+  justify-content: "space-between";
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content__item_inner {
+  margin-right: 2rem;
+  width: 50%;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+  .level_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .level_no {
+      margin-right: 12px;
+    }
+    .level_item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      background: #d9e5f8;
+      border-radius: 4px;
+      padding: 8px 16px;
+
+      span {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.01em;
+      }
+      #cursor {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .multipler_container {
+    display: flex;
+    margin-bottom: 1rem;
+
+    .multipler_score {
+      width: 80px;
+      background: #f3f4f5;
+      border-radius: 4px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      align-items: center;
+      margin-right: 1rem;
+    }
+    .multipler_option {
+      width: 100%;
+      background: #f3f4f5;
+      border-radius: 4px;
+      font-size: 14px;
+      display: flex;
+      height: 40px;
+      align-items: center;
+      margin-right: 1rem;
+      padding: 0px 14px;
+    }
+    .multipler_cancel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      cursor: pointer;
+    }
+  }
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+
+  .btn_add {
+    color: $colorblue;
+    border: 1px solid $colorblue;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 12px;
+  }
+}
+
+// evaluation page
+.mini_menu_header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 64px;
+
+  .ant-tabs {
+    width: 100%;
+
+    .ant-tabs-nav {
+      padding-right: 32px;
+      padding-left: 32px;
+      background-color: $whiteColor;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+    }
+    .ant-tabs-tab-btn {
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      color: #737d88;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #183055 !important;
+    }
+    .ant-tabs-ink-bar {
+      background: #eaaa00 !important;
+    }
+  }
+  .tabs__extra_content {
+    display: flex;
+    align-items: center;
+
+    .tabs__extra_content__btn_disable {
+      padding: 4px 12px;
+      font-size: 12px;
+      background: #d0d4d7;
+      border-radius: 3px;
+      color: $whiteColor;
+      letter-spacing: 0.01em;
+      margin-left: 10px;
+    }
+    .tabs__extra_content__btn_back {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      color: #737d88;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      font-weight: bold;
+    }
+    .tabs__extra_content__btn {
+      background: #0052cc;
+      color: #ffffff;
+    }
+    p {
+      margin: 0px;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: #ef3529;
+    }
+  }
+
+  // tabs contents
+  .tabs__content {
+    padding: 0px 60px 16px 32px;
+    width: 100%;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .tabs__content_title {
+        font-family: "KPMG App";
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 0px;
+      }
+
+      .btn__comment {
+        background: #d0d4d7;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .eval__factor_container {
+      display: flex;
+      width: 100%;
+
+      .eval__factor_summary {
+        width: 26.5%;
+        height: 354px;
+        margin-left: 1.5rem;
+        background-color: $whiteColor;
+        border: 1px solid #e8e9eb;
+        box-sizing: border-box;
+        border-radius: 12px;
+
+        #summary_bg {
+          background: url("../assets/images/summary_bg.svg") no-repeat;
+          width: 100%;
+          height: 148px;
+          padding: 1rem;
+          display: flex;
+          color: $whiteColor;
+          flex-direction: column;
+
+          .factor__weight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #weight__val {
+              font-family: "KPMG App";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 48px;
+              line-height: 58px;
+            }
+            p {
+              font-size: 11px;
+              line-height: 14px;
+              letter-spacing: 0.01em;
+              color: #e8e9eb;
+            }
+          }
+        }
+
+        .factor__item_container {
+          padding: 1rem;
+
+          .factor__item {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    .other__content {
+      P {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+      }
+
+      .matrices__content {
+        width: 100%;
+        background-color: $whiteColor;
+        border: 1px solid #e8e9eb;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 2rem 0rem 0rem 1.3rem;
+      }
+    }
+  }
+  .job_listing {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// login
+.loginView {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f7fb;
+  // justify-content: center;
+  color: #495057;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: white;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 2px;
+  }
+  .title {
+    font-size: 1.12rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  .description {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  .button {
+    margin-top: 10px;
+    background: #316cbe;
+    border-color: #2f66b3;
+    color: white;
+    width: 100%;
+  }
+}
